@@ -20,7 +20,7 @@ function tryVar() {
 }
 tryVar();
 console.log("outerVar in outer block after function: " + outerVar);
-// console.log("functionVar in outer block: " + functionVar);
+console.log("functionVar in outer block: " + functionVar);
 functionVar = "functionVar in outer";
 tryVar();
 
