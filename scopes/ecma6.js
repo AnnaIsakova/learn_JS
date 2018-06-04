@@ -1,5 +1,5 @@
 "use strict";
-var outerVar = "outerVar";
+let outerVar = "outerVar";
 console.log("outerVar in outer block before if: " + outerVar);
 
 if(true){
