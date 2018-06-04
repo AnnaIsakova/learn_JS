@@ -1,24 +1,24 @@
 "use strict";
-let outerVar = "outerVar";
-console.log("outerVar in outer block before if: " + outerVar);
+let outerLet = "outerLet";
+console.log("outerLet in outer block before if: " + outerLet);
 
 if(true){
-    console.log("outerVar in if block: " + outerVar);
-    outerVar = "outerVar in if"
-    var ifVar = "ifVar";
-    console.log("ifVar in if block: " + ifVar);
+    console.log("outerLet in if block: " + outerLet);
+    outerLet = "outerLet in if";
+    let ifLet = "ifLet";
+    console.log("ifLet in if block: " + ifLet);
 }
 
-console.log("outerVar in outer block after if: " + outerVar);
-console.log("ifVar in outer block: " + ifVar);
+console.log("outerLet in outer block after if: " + outerLet);
+console.log("ifLet in outer block: " + ifLet);
 
 function tryVar() {
-    console.log("outerVar in function: " + outerVar);
-    outerVar = "outerVar in function";
+    console.log("outerLet in function: " + outerLet);
+    outerLet = "outerLet in function";
 
-    var functionVar = "functionVar";
-    console.log("functionVar in function: " + functionVar);
+    let functionLet = "functionLet";
+    console.log("functionLet in function: " + functionLet);
 }
 tryVar();
-console.log("outerVar in outer block after function: " + outerVar);
-console.log("functionVar in outer block: " + functionVar);
+console.log("outerVar in outer block after function: " + outerLet);
+console.log("functionVar in outer block: " + functionLet);
